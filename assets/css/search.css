@@ -1,0 +1,42 @@
+.location {
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 0px 15px 65px;
+  box-shadow: inset 0 5px 10px -10px;
+}
+.location input {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: rgb(235, 235, 235);
+  border: none;
+}
+.location i {
+  cursor: pointer;
+}
+.location i:hover {
+  transform: scale(1.15);
+  transition: 0.2s;
+}
+
+.presentation {
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  padding: 0px 10px 70px;
+}
+.presentation h1 {
+  font-weight: 900;
+  font-size: 24px;
+  padding: 40px 0px 10px;
+  max-width: 250px;
+  margin: auto;
+}
+.presentation p {
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+/*# sourceMappingURL=search.css.map */

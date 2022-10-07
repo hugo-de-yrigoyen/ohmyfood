@@ -1,0 +1,45 @@
+footer {
+  background-color: rgb(50, 50, 50);
+  color: white;
+}
+footer .bloc-footer {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+footer .bloc-footer h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 20px 0px;
+  width: fit-content;
+}
+footer .bloc-footer a,
+footer .bloc-footer a:visited {
+  text-decoration: none;
+  color: white;
+}
+footer .bloc-footer a:hover,
+footer .bloc-footer a:focus {
+  color: #ff79da;
+}
+footer .bloc-footer nav ul {
+  list-style: none;
+  font-size: 16px;
+  padding: 0px;
+}
+footer .bloc-footer nav ul li a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: 500;
+}
+footer .bloc-footer nav ul li a i {
+  width: 15px;
+}
+footer .bloc-footer nav ul li {
+  padding-bottom: 8px;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=footer.css.map */

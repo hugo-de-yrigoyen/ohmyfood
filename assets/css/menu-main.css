@@ -1,0 +1,233 @@
+.img-menu {
+  z-index: -1;
+  position: relative;
+}
+.img-menu img {
+  object-fit: cover;
+  object-position: 50% 45%;
+  width: 100%;
+  max-height: 240px;
+}
+
+.menu {
+  margin-top: -40px;
+  padding-bottom: 80px;
+  border-radius: 40px 40px 0px 0px;
+  background-color: rgb(240, 240, 240);
+}
+.menu .bloc-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  width: 90%;
+  margin: auto;
+}
+.menu .bloc-menu .bloc-titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: -15px;
+  width: 100%;
+}
+.menu .bloc-menu .bloc-titre h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 27px;
+  font-weight: 500;
+}
+.menu .bloc-menu .bloc-titre .fa-heart {
+  position: absolute;
+  right: 5%;
+}
+@keyframes appear {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.menu .bloc-menu .entree {
+  opacity: 0%;
+  animation: appear 0.5s none 0.75s;
+  animation-fill-mode: forwards;
+}
+.menu .bloc-menu .plats {
+  opacity: 0%;
+  animation: appear 0.75s none 1.5s;
+  animation-fill-mode: forwards;
+}
+.menu .bloc-menu .desserts {
+  opacity: 0%;
+  animation: appear 0.75s none 2.25s;
+  animation-fill-mode: forwards;
+}
+.menu .bloc-menu h2 {
+  font-weight: 400;
+  font-size: 16px;
+  border-bottom: 3.5px solid #99e2d0;
+  width: 40px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.menu .bloc-menu .bloc-plat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.menu .bloc-menu .bloc-plat .plat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  height: fit-content;
+  box-shadow: 0px 3px 15px -10px;
+  min-width: 310px;
+  width: 340px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu .bloc-menu .bloc-plat .plat .text {
+  padding: 10px;
+  width: 100%;
+}
+.menu .bloc-menu .bloc-plat .plat .text p,
+.menu .bloc-menu .bloc-plat .plat .text h3 {
+  max-width: 258px;
+}
+.menu .bloc-menu .bloc-plat .plat .text h3 {
+  font-weight: 500;
+  font-size: 17.5px;
+  margin-bottom: 5px;
+  max-width: 258px;
+}
+.menu .bloc-menu .bloc-plat .plat .text .align {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.menu .bloc-menu .bloc-plat .plat .text .align p {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu .bloc-menu .bloc-plat .plat .text .align span {
+  font-size: 14px;
+  font-weight: 700;
+  padding-right: 15px;
+}
+.menu .bloc-menu .bloc-plat .plat i {
+  background-color: #99e2d0;
+  color: white;
+  margin-right: -45px;
+}
+.menu .bloc-menu .bloc-plat .plat .padding {
+  padding: 31px 20px 31px;
+  border-radius: 0px 15px 15px 0px;
+}
+.menu .bloc-menu .bloc-plat .plat .center {
+  position: relative;
+  right: 0px;
+  margin-left: -4px;
+  padding: 2.3px 0px;
+}
+.menu .bloc-menu .bloc-plat .plat:hover .center {
+  animation: rotate 0.5s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes rotate {
+  0% {
+    right: 0px;
+    margin-right: -45px;
+    transform: rotate(-180deg);
+  }
+  100% {
+    right: 40px;
+    margin-right: -20px;
+    transform: rotate(360deg);
+  }
+}
+.menu .bloc-menu .bloc-plat .plat:hover .padding {
+  animation: translate 0.5s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes translate {
+  0% {
+    margin-right: -45px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
+.menu .bloc-menu .bloc-plat .plat:hover p,
+.menu .bloc-menu .bloc-plat .plat:hover h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  animation: cut 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes cut {
+  0% {
+    width: 250px;
+  }
+  100% {
+    width: 190px;
+  }
+}
+.menu .bloc-menu .bloc-plat .plat:not(:hover) .center {
+  animation: rotate-out 0.5s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes rotate-out {
+  0% {
+    margin-right: -20px;
+    right: 40px;
+  }
+  100% {
+    margin-right: -45px;
+    right: 0px;
+  }
+}
+.menu .bloc-menu .bloc-plat .plat:not(:hover) .padding {
+  animation: translate-out 0.5s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes translate-out {
+  0% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: -45px;
+  }
+}
+.menu .bloc-menu .bloc-plat .plat:not(:hover) p,
+.menu .bloc-menu .bloc-plat .plat:not(:hover) h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  animation: uncut 0.5s;
+}
+@keyframes uncut {
+  0% {
+    width: 190px;
+  }
+  100% {
+    width: 250px;
+  }
+}
+
+/*# sourceMappingURL=menu-main.css.map */

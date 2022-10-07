@@ -1,0 +1,43 @@
+footer {
+  background-color: rgb(50, 50, 50);
+  color: white;
+  .bloc-footer {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+    h2 {
+      font-family: "Shrikhand", sans-serif;
+      font-size: 18px;
+      font-weight: 100;
+      padding: 20px 0px;
+      width: fit-content;
+    }
+    a,
+    a:visited {
+      text-decoration: none;
+      color: white;
+    }
+    a:hover,
+    a:focus {
+      color: #ff79da;
+    }
+    nav ul {
+      list-style: none;
+      font-size: 16px;
+      padding: 0px;
+      li a {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        font-weight: 500;
+        i {
+          width: 15px;
+        }
+      }
+      li {
+        padding-bottom: 8px;
+        font-size: 15px;
+      }
+    }
+  }
+}

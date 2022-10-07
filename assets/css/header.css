@@ -1,0 +1,18 @@
+header {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header i {
+  position: absolute;
+  left: 20px;
+  color: black;
+}
+header img {
+  height: 25.5px;
+  margin: 20px 0px 10px;
+}
+
+/*# sourceMappingURL=header.css.map */

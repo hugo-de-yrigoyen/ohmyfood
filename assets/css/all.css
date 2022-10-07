@@ -1,0 +1,184 @@
+* {
+  font-family: "roboto", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0px;
+}
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ff79da, #9356dc);
+  animation: load 0.5s none 2s;
+  animation-fill-mode: forwards;
+  z-index: 99;
+}
+@keyframes load {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    z-index: -99;
+  }
+}
+.loading-spinner .spinner {
+  position: absolute;
+  margin-top: -100px;
+}
+.loading-spinner .spinner span {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 45px;
+}
+.loading-spinner .spinner div {
+  position: absolute;
+  margin: 90px 0px 0px 80px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.loading-spinner .spinner div:nth-child(1) {
+  left: 8px;
+  animation: spinner1 0.6s infinite;
+}
+.loading-spinner .spinner div:nth-child(2) {
+  left: 8px;
+  animation: spinner2 0.6s infinite;
+}
+.loading-spinner .spinner div:nth-child(3) {
+  left: 32px;
+  animation: spinner2 0.6s infinite;
+}
+.loading-spinner .spinner div:nth-child(4) {
+  left: 56px;
+  animation: spinner3 0.6s infinite;
+}
+@keyframes spinner1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes spinner2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+@keyframes spinner3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.main-titles {
+  font-weight: 900;
+  font-size: 24px;
+  padding: 50px 0px 20px;
+}
+
+.btn {
+  margin: auto;
+  width: fit-content;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0px 5px 15px -10px;
+  padding: 15px 0px;
+  border-radius: 30px;
+}
+.btn a,
+.btn a:visited,
+.btn a:hover,
+.btn a:focus {
+  text-decoration: none;
+  padding: 15px 25px;
+}
+.btn a span,
+.btn a:visited span,
+.btn a:hover span,
+.btn a:focus span {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+.btn:hover {
+  background: linear-gradient(#ff79da, #ff79da, #9356dc);
+  box-shadow: 0px 10px 25px -10px;
+  transition: 0.2s;
+}
+
+.btn-large a,
+.btn-large a:visited,
+.btn-large a:hover,
+.btn-large a:focus {
+  padding: 15px 50px;
+}
+
+.fa-heart {
+  cursor: pointer;
+}
+.fa-heart:hover {
+  color: #9356dc;
+}
+
+#heart:checked ~ label,
+#heart1:checked ~ label,
+#heart2:checked ~ label,
+#heart3:checked ~ label,
+#heart4:checked ~ label {
+  color: #9356dc;
+}
+#heart:checked ~ label .heart-full,
+#heart1:checked ~ label .heart-full,
+#heart2:checked ~ label .heart-full,
+#heart3:checked ~ label .heart-full,
+#heart4:checked ~ label .heart-full {
+  display: inline;
+}
+#heart:checked ~ label .heart-full::before,
+#heart1:checked ~ label .heart-full::before,
+#heart2:checked ~ label .heart-full::before,
+#heart3:checked ~ label .heart-full::before,
+#heart4:checked ~ label .heart-full::before {
+  display: inline;
+  position: relative;
+  background: linear-gradient(0deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fill 1.5s;
+}
+@keyframes fill {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.heart-full,
+.heart-full::before,
+#heart,
+#heart1,
+#heart2,
+#heart3,
+#heart4 {
+  display: none;
+  margin-left: -24px;
+}
+
+/*# sourceMappingURL=all.css.map */

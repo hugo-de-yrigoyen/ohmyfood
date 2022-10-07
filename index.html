@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Hugo de Yrigoyen" />
+    <meta
+      name="description"
+      content="Découvrez des restaurants d'exception, séléctionnés par nos soins."
+    />
+    <meta
+      name="keywords"
+      content="restaurant, menu, déguster, dégustation, gastronomie, gastronomique, réserver, réservation, ohmyfood"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/83f6f41b1a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Ohmyfood! - Réservez le menu qui vous convient</title>
+  </head>
+
+  <body>
+    <div class="loading-spinner">
+      <div class="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <span>ohmyfood</span>
+      </div>
+    </div>
+
+    <header>
+      <a href="#" title="Ohmyfood!"
+        ><img src="assets/images/logo.png" alt="logo Ohmyfood!"
+      /></a>
+    </header>
+    <main>
+      <section>
+        <div class="location">
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+          <input type="text" placeholder="Paris, Belleville" />
+        </div>
+
+        <div class="presentation">
+          <h1>Réservez le menu qui vous convient</h1>
+          <p>
+            Découvrez des restaurants d'exception, séléctionnés par nos soins.
+          </p>
+          <div class="btn">
+            <a href="#restaurants" title="Explorer nos restaurants">
+              <span>Explorer nos restaurants</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <h2 class="main-titles">Fonctionnement</h2>
+
+        <div class="bloc-guide">
+          <section class="guide">
+            <span class="round">1</span>
+            <i class="fa-solid fa-mobile-screen-button fa-lg"></i>
+            <h3>Choisissez un restaurant</h3>
+          </section>
+
+          <section class="guide">
+            <span class="round">2</span>
+            <i class="fa-solid fa-list"></i>
+            <h3>Composez votre menu</h3>
+          </section>
+
+          <section class="guide">
+            <span class="round">3</span>
+            <i class="fa-solid fa-store"></i>
+            <h3>Dégustez au restaurant</h3>
+          </section>
+        </div>
+      </aside>
+
+      <article id="restaurants">
+        <h2 class="main-titles">Restaurants</h2>
+
+        <div class="bloc-restaurant">
+          <section class="restaurant">
+            <a href="la-palette-du-gout.html">
+              <img
+                src="assets/images/la-palette-du-gout.jpg"
+                alt="La palette du goût"
+              />
+              <span class="nouveau">Nouveau</span>
+              <h3>La palette du goût</h3>
+              <p>Ménilmontant</p>
+            </a>
+            <input type="checkbox" id="heart1" />
+            <label for="heart1">
+              <i class="fa-regular fa-heart fa-xl"></i>
+              <i class="fa-sharp fa-solid fa-heart heart-full fa-xl"></i>
+            </label>
+          </section>
+
+          <section class="restaurant">
+            <a href="la-note-enchantee.html">
+              <img
+                src="assets/images/la-note-enchantee.jpg"
+                alt="La note enchantée"
+                class="center-image"
+              />
+              <span class="nouveau">Nouveau</span>
+              <h3>La note enchantée</h3>
+              <p>Charonne</p>
+            </a>
+            <input type="checkbox" id="heart2" />
+            <label for="heart2">
+              <i class="fa-regular fa-heart fa-xl"></i>
+              <i class="fa-sharp fa-solid fa-heart heart-full fa-xl"></i>
+            </label>
+          </section>
+
+          <section class="restaurant">
+            <a href="a-la-francaise.html">
+              <img
+                src="assets/images/a-la-francaise.jpg"
+                alt="À la française"
+              />
+              <h3>À la française</h3>
+              <p>Cité Rouge</p>
+            </a>
+            <input type="checkbox" id="heart3" />
+            <label for="heart3">
+              <i class="fa-regular fa-heart fa-xl"></i>
+              <i class="fa-sharp fa-solid fa-heart heart-full fa-xl"></i>
+            </label>
+          </section>
+
+          <section class="restaurant">
+            <a href="le-delice-des-sens.html">
+              <img
+                src="assets/images/le-delice-des-sens.jpg"
+                alt="Le délice des sens"
+              />
+              <h3>Le délice des sens</h3>
+              <p>Folie-Méricourt</p>
+            </a>
+            <input type="checkbox" id="heart4" />
+            <label for="heart4">
+              <i class="fa-regular fa-heart fa-xl"></i>
+              <i class="fa-sharp fa-solid fa-heart heart-full fa-xl"></i>
+            </label>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="bloc-footer">
+        <a href="#" title="Ohmyfood!"><h2>ohmyfood</h2></a>
+        <nav>
+          <ul>
+            <li>
+              <a href="#" title="Proposer un restaurant">
+                <i class="fa-solid fa-utensils fa-xs"></i>
+                <span>Proposer un restaurant</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" title="Devenir partenaire">
+                <i class="fa-solid fa-handshake-angle fa-xs"></i>
+                <span>Devenir partenaire</span>
+              </a>
+            </li>
+
+            <li><a href="#" title="Mentions légales">Mentions légales</a></li>
+            <li>
+              <a href="mailto:ohmyfood@gmail.com" title="Contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
