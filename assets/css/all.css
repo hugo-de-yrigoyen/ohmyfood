@@ -159,7 +159,7 @@
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fill 1.5s;
+  animation: fill 0.75s;
 }
 @keyframes fill {
   0% {
