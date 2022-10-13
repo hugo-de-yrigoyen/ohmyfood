@@ -91,6 +91,9 @@
           width: 100%;
           p,
           h3 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             max-width: 258px;
           }
           h3 {
@@ -166,9 +169,6 @@
           }
           p,
           h3 {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
             animation: cut 0.5s;
             animation-fill-mode: forwards;
             @keyframes cut {
@@ -214,9 +214,6 @@
           }
           p,
           h3 {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
             animation-timing-function: ease-in-out;
             -webkit-animation-timing-function: ease-in-out;
             animation: uncut 0.5s;

@@ -95,6 +95,9 @@
 }
 .menu .bloc-menu .bloc-plat .plat .text p,
 .menu .bloc-menu .bloc-plat .plat .text h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   max-width: 258px;
 }
 .menu .bloc-menu .bloc-plat .plat .text h3 {
@@ -168,9 +171,6 @@
 }
 .menu .bloc-menu .bloc-plat .plat:hover p,
 .menu .bloc-menu .bloc-plat .plat:hover h3 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   animation: cut 0.5s;
   animation-fill-mode: forwards;
 }
@@ -214,9 +214,6 @@
 }
 .menu .bloc-menu .bloc-plat .plat:not(:hover) p,
 .menu .bloc-menu .bloc-plat .plat:not(:hover) h3 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
   animation: uncut 0.5s;
