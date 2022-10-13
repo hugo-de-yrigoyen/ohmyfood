@@ -15,3 +15,10 @@
   ![Animation Menu](assets/maquette/Animations/Animation_PageMenu_Selection.gif "Animation Menu")
   ![Maquette Accueil](assets/maquette/accueil.png "Maquette Accueil")
   ![Maquette Menu](assets/maquette/menu-la-palette-du-gout.png "Maquette Menu")
+
+  ## Évaluation
+
+- Projet validé
+- Remarques :
+  ![Evaluation 1](assets/evaluation/evaluation1.png "Evaluation 1")
+  ![Evaluation 2](assets/evaluation/evaluation2.png "Evaluation 2")
