@@ -1,6 +1,6 @@
 # Ohmyfood - Projet d'études
 
-- https://hugodeyrigoyen.github.io/ohmyfood/
+- https://hugo-de-yrigoyen.github.io/ohmyfood/
 - Dans le cadre des mes études de développeur web
 - Site animé de réservation de menu de restaurant en **HTML et CSS uniquement** (pas d'autre language, ou de framework)
 - Utilisation de SCSS
